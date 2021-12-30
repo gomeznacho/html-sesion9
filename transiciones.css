@@ -1,0 +1,41 @@
+.contenedor{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.midiv{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    color: wheat;
+}
+
+.midiv:hover{
+    animation-name: rotacion;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+}
+
+.midiv2{
+    height: 100px;
+    width: 100px;
+    background-color: darkgreen;
+}
+
+.midiv2:hover{
+    animation-name: traslacion;
+    animation-duration: 1s;
+    transform: translate(100px);
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+@keyframes rotacion {
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+    
+}
